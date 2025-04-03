@@ -24,9 +24,11 @@ public class Main {
         Stream<User> listaFeminina = lista.stream().filter(pessoa -> pessoa.getSexo().equalsIgnoreCase("Feminino"));
         Stream<User> listaMasculina = lista.stream().filter(pessoa -> pessoa.getSexo().equalsIgnoreCase("Masculino"));
 
+
         System.out.println("Lista Feminina: ");
         listaFeminina.forEach(pessoa -> System.out.println(pessoa.getNome()));
         System.out.println("Lista Masculina: ");
         listaMasculina.forEach(pessoa -> System.out.println(pessoa.getNome()));
+
     }
 }
